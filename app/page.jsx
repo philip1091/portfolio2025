@@ -48,7 +48,10 @@ const Home = () => {
             <h1 className="h1 mb-1">
               Hello I'm
               <br />
-              <span className="text-accent">J.Philippe Hicintuka, </span>
+              <span className="text-accent">
+                J.Philippe Hicintuka
+                <span className="text-white">,</span>
+              </span>
             </h1>
             <div className="text-xl mb-9">
               <Intro />

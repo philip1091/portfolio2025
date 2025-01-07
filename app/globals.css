@@ -19,7 +19,15 @@
   .img-contrast {
     @apply filter contrast-110;
   }
+  .text-outline {
+    -webkit-text-stroke: 1px #ffffff;
+  }
+
+  .text-outline-hover {
+    -webkit-text-stroke: 1px #00ff99;
+  }
 }
+
 
 
 @layer utilities {

@@ -9,6 +9,7 @@ import {
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
+import { Button } from "./ui/button";
 
 const links = [
   {
@@ -28,7 +29,7 @@ const links = [
     path: "/work",
   },
   {
-    name: "Contact",
+    name: "Contact me!",
     path: "/contact",
   },
 ];
@@ -57,7 +58,13 @@ const MobileNav = () => {
         </SheetTitle>
         <nav className="flex flex-col justify-center items-center gap-8">
           {links.map((link, index) => {
-            return (
+            return link.path === "/contact" ? (
+              <Link key={index} href={link.path} onClick={handleLinkClick}>
+                <Button key={index} >
+                  {link.name}
+                </Button>
+              </Link>
+            ) : (
               <Link
                 key={index}
                 href={link.path}
