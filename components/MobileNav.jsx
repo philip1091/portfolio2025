@@ -60,7 +60,7 @@ const MobileNav = () => {
           {links.map((link, index) => {
             return link.path === "/contact" ? (
               <Link key={index} href={link.path} onClick={handleLinkClick}>
-                <Button key={index} >
+                <Button className="rounded" key={index} >
                   {link.name}
                 </Button>
               </Link>

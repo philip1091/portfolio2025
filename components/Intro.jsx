@@ -1,7 +1,6 @@
 "use client";
-// import Typical from "react-typical";
 import { ReactTyped } from "react-typed";
-import { motion } from "motion/react";
+
 const Intro = () => {
   return (
     <div>
@@ -10,8 +9,8 @@ const Intro = () => {
         strings={[
           "Software Developer",
           "Web Developer",
-          "Frontend Developer",
-          "Fullstack Developer",
+          "Front End Developer",
+          "Full Stack Developer",
         ]}
         className="text-accent border-none font-extrabold "
         typeSpeed={70}

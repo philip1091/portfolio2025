@@ -2,33 +2,8 @@
 import { BsArrowDownRight } from "react-icons/bs";
 import Link from "next/link";
 import { motion } from "motion/react";
+import services from "./data/services";
 
-const services = [
-  {
-    num: "01",
-    title: "Web/Software Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    href: "",
-  },
-  {
-    num: "02",
-    title: "Software architecture",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    href: "",
-  },
-  {
-    num: "03",
-    title: "SEO Optimization",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    href: "",
-  },
-  {
-    num: "04",
-    title: "UI/UX Design",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    href: "",
-  },
-];
 
 const Services = () => {
   return (

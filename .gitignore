@@ -3,6 +3,9 @@
 # dependencies
 /node_modules
 /public/assets
+/app/resume/data
+/app/services/data
+/app/data
 /.pnp
 .pnp.*
 .yarn/*
