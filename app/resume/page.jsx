@@ -104,7 +104,7 @@ const Resume = () => {
                           className="bg-[#232329] h-[284px] py-6 px-10 rounded flex flex-col justify-center items-center lg:items-start gap-1"
                         >
                           <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-l max-w-[260px] min-h-[120px] h-[120px] text-center lg:text-left">
+                          <h3 className="text-lg max-w-[260px] min-h-[120px] h-[120px] text-center lg:text-left">
                             {item.degree}
                           </h3>
                           <div className="flex items-center gap-3">
@@ -173,7 +173,7 @@ const Resume = () => {
                               <TooltipTrigger asChild>
                                 <Link
                                   href="https://www.linkedin.com/in/philip1091/"
-                                  className="text-l text-accent italic"
+                                  className="text-lg text-accent italic"
                                   target="_blank"
                                   rel="noopener noreferrer"
                                 >
@@ -191,7 +191,7 @@ const Resume = () => {
                               <TooltipTrigger asChild>
                                 <Link
                                   href={`mailto:${item.fieldValue}`}
-                                  className="text-l text-accent italic"
+                                  className="text-lg text-accent italic"
                                 >
                                   {item.fieldValue}
                                 </Link>
@@ -207,7 +207,7 @@ const Resume = () => {
                               <TooltipTrigger asChild>
                                 <a
                                   href={`tel:${item.fieldValue}`}
-                                  className="text-l text-accent italic"
+                                  className="text-lg text-accent italic"
                                 >
                                   {item.fieldValue}
                                 </a>
@@ -218,7 +218,7 @@ const Resume = () => {
                             </Tooltip>
                           </TooltipProvider>
                         ) : (
-                          <span className="text-l">{item.fieldValue}</span>
+                          <span className="text-lg">{item.fieldValue}</span>
                         )}
                       </li>
                     );
