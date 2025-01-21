@@ -67,7 +67,12 @@ const Contact = () => {
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
           alert("Email sent successfully!");
-          console.log("contactData", contactData);
+          setFirstname("");
+          setLastname("");
+          setPhone("");
+          setEmail("");
+          setService("");
+          setMessage("");
         },
         (error) => {
           console.error("FAILED...", error);
