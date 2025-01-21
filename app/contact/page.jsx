@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-
+import React, { useState } from "react";
 import {
   Select,
   SelectContent,
@@ -18,6 +18,44 @@ import info from "./data/info";
 
 
 const Contact = () => {
+   const [firstname, setFirstname] = useState("");
+   const [lastname, setLastname] = useState("");
+   const [phone, setPhone] = useState("");
+   const [email, setEmail] = useState("");
+   const [service, setService] = useState("");
+   const [message, setMessage] = useState("");
+
+
+   const handleInput = (value, type) => {
+    if (type === "firstname") {
+      setFirstname(value);
+    } else if (type === "lastname") {
+      setLastname(value);
+    } else if (type === "phone") {
+      setPhone(value);
+    } else if (type === "email") {
+      setEmail(value);
+    } else if (type === "service") {
+      setService(value);
+    } else if (type === "message") {
+      setMessage(value);
+    }
+   }
+
+   const handleServiceChange = (value) => {
+     setService(value);
+   };
+
+   const handleClick = (e) => {
+    e.preventDefault();
+    console.log("firstname", firstname);
+    console.log("lastname", lastname);
+    console.log("phone", phone);
+    console.log("email", email);
+    console.log("message", message);
+    console.log("service", service);
+   }
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -33,33 +71,50 @@ const Contact = () => {
           <div className="xl:w-[54%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               <h3 className="text-4xl text-accent">Let's work together!</h3>
-              <p className="text-white/60">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Mollitia, sed!
+              <p className="text-white/60 text-sm">
+                Feel free to reach out if you’d like to collaborate, require my
+                expertise, or have any questions. I’m happy to assist and
+                discuss how I can contribute to your project.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input
                   className="rounded-[5px]"
-                  type="firstname"
+                  type="text"
                   placeholder="Firstname"
+                  value={firstname}
+                  onChange={(e) => {
+                    handleInput(e.target.value, "firstname");
+                  }}
                 />
                 <Input
                   className="rounded-[5px]"
-                  type="lastname"
+                  type="text"
                   placeholder="Lastname"
+                  value={lastname}
+                  onChange={(e) => {
+                    handleInput(e.target.value, "lastname");
+                  }}
                 />
                 <Input
                   className="rounded-[5px]"
                   type="email"
                   placeholder="Email"
+                  value={email}
+                  onChange={(e) => {
+                    handleInput(e.target.value, "email");
+                  }}
                 />
                 <Input
                   className="rounded-[5px]"
-                  type="phone"
+                  type="tel"
                   placeholder="Phone number"
+                  value={phone}
+                  onChange={(e) => {
+                    handleInput(e.target.value, "phone");
+                  }}
                 />
               </div>
-              <Select>
+              <Select onValueChange={handleServiceChange}>
                 <SelectTrigger className="w-full rounded-[5px]">
                   <SelectValue placeholder="Select a service" />
                 </SelectTrigger>
@@ -75,11 +130,21 @@ const Contact = () => {
                     </SelectItem>
                     <SelectItem value="seo">SEO Optimization</SelectItem>
                     <SelectItem value="ui-ux">UI/UX Design</SelectItem>
+                    <SelectItem value="question">General Question</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
-              <Textarea className="h-[200px]"  placeholder="Type your message" />
-              <Button size="md" className="max-w-[200px]" >Send Message</Button>
+              <Textarea
+                value={message}
+                onChange={(e) => {
+                  handleInput(e.target.value, "message");
+                }}
+                className="h-[200px]"
+                placeholder="Type your message"
+              />
+              <Button onClick={handleClick} size="md" className="max-w-[200px]">
+                Send Message
+              </Button>
             </form>
           </div>
           {/* info */}
