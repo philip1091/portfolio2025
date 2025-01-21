@@ -30,7 +30,8 @@ import about from "./data/about";
 import experience from "./data/experience";
 import education from "./data/education";
 import skills from "./data/skills";
-
+import { Button } from "@/components/ui/button";
+import { FiDownload } from "react-icons/fi";
 
 const Resume = () => {
   return (
@@ -57,6 +58,16 @@ const Resume = () => {
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
             <TabsTrigger value="about">About me</TabsTrigger>
+            <a className="flex justify-center" href="/assets/resume/resume.pdf" download="philip-resume.pdf">
+              <Button
+                variant="outline"
+                size="lg"
+                className="uppercase flex items-center gap-2"
+              >
+                <span>Download my Resume</span>
+                <FiDownload className="text-xl" />
+              </Button>
+            </a>
           </TabsList>
           <div className="min-h-[70vh] w-full">
             <TabsContent value="experience" className="w-full">
