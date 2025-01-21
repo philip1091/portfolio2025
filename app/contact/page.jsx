@@ -13,20 +13,19 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-
+import emailjs from "@emailjs/browser";
 import info from "./data/info";
-
+import emailData from "./data/email";
 
 const Contact = () => {
-   const [firstname, setFirstname] = useState("");
-   const [lastname, setLastname] = useState("");
-   const [phone, setPhone] = useState("");
-   const [email, setEmail] = useState("");
-   const [service, setService] = useState("");
-   const [message, setMessage] = useState("");
+  const [firstname, setFirstname] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [service, setService] = useState("");
+  const [message, setMessage] = useState("");
 
-
-   const handleInput = (value, type) => {
+  const handleInput = (value, type) => {
     if (type === "firstname") {
       setFirstname(value);
     } else if (type === "lastname") {
@@ -40,21 +39,43 @@ const Contact = () => {
     } else if (type === "message") {
       setMessage(value);
     }
-   }
+  };
 
-   const handleServiceChange = (value) => {
-     setService(value);
-   };
+  const handleServiceChange = (value) => {
+    setService(value);
+  };
 
-   const handleClick = (e) => {
+  const handleClick = (e) => {
     e.preventDefault();
-    console.log("firstname", firstname);
-    console.log("lastname", lastname);
-    console.log("phone", phone);
-    console.log("email", email);
-    console.log("message", message);
-    console.log("service", service);
-   }
+    const contactData = {
+      firstname: firstname,
+      lastname: lastname,
+      phone: phone,
+      email: email,
+      service: service,
+      message: message,
+    };
+
+    emailjs
+      .send(
+        emailData.service_id,
+        emailData.template_id,
+        contactData,
+        emailData.public_key
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          alert("Email sent successfully!");
+          console.log("contactData", contactData);
+        },
+        (error) => {
+          console.error("FAILED...", error);
+          alert("Failed to send email.");
+        }
+      );
+  };
+
 
   return (
     <motion.section
