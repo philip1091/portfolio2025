@@ -1,0 +1,34 @@
+{
+  "title": "About Me",
+  "description": "I am a passionate developer with expertise in frontend, backend, and full-stack development, dedicated to crafting innovative and impactful digital solutions. I thrive on solving complex challenges and creating seamless user experiences. Feel free to contact me using the information below. I’d love to connect!",
+  "info": [
+    {
+      "fieldName": "Name",
+      "fieldValue": "Jean Philippe Hicintuka"
+    },
+    {
+      "fieldName": "Email",
+      "fieldValue": "philip.dev.contact@gmail.com"
+    },
+    {
+      "fieldName": "LinkedIn",
+      "fieldValue": "philip1091"
+    },
+    {
+      "fieldName": "Experience",
+      "fieldValue": "5+ years"
+    },
+    {
+      "fieldName": "Location",
+      "fieldValue": "Quebec, Canada"
+    },
+    {
+      "fieldName": "Freelance",
+      "fieldValue": "Available"
+    },
+    {
+      "fieldName": "Language",
+      "fieldValue": "English, French"
+    }
+  ]
+}

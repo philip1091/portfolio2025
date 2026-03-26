@@ -1,0 +1,22 @@
+{
+  "icon": "/assets/resume/cap.svg",
+  "title": "My Education",
+  "description": "I hold a Bachelor’s in Software Engineering from Nanjing University and a Master’s in Information and Communication Engineering from Donghua University. I also completed a Fullstack Coding Bootcamp at Le Wagon Shanghai, where I gained hands-on experience with modern web development tools and technologies. This education has equipped me with a strong foundation and practical skills for building innovative solutions.",
+  "items": [
+    {
+      "institution": "Donghua University",
+      "degree": "Masters in Information and Communication Engineering",
+      "duration": "2017 - 2020"
+    },
+    {
+      "institution": "Le Wagon Coding Bootcamp",
+      "degree": "Certificate of achievement from Le Wagon web development Bootcamp",
+      "duration": "2019 - 2019"
+    },
+    {
+      "institution": "NUIST",
+      "degree": "Bachelor in Software Engineering",
+      "duration": "2012 - 2017"
+    }
+  ]
+}

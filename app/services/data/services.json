@@ -1,0 +1,26 @@
+[
+  {
+    "num": "01",
+    "title": "Web Development",
+    "description": "Website Development, Single Page Applications (SPAs),UI/UX Implementation, Web Animations, API Development, Database Integration, Authentication Systems, End-to-End Web Applications, Progressive Web Apps, Desktop Applications, Business Automation, Inventory/Order Management, CRM/ERP Development, Inventory/Order Management. ",
+    "href": "/contact"
+  },
+  {
+    "num": "02",
+    "title": "Software architecture",
+    "description": "High-Level System Design, Microservices Architecture, Monolithic to Microservices Migration, Event-Driven Architecture, , Serverless Architecture, Tech Stack Evaluation, Tools and Frameworks Selection, Technology Roadmaps, Codebase Structuring, API Design, System Bottleneck Analysis, Database Optimization, Load Balancing.",
+    "href": "/contact"
+  },
+  {
+    "num": "03",
+    "title": "SEO Optimization",
+    "description": "Keyword Discovery, Long-Tail Keywords, Search Intent Analysis, Meta Tag Optimization, Content Optimization, URL Structure, Image Optimization, Internal Linking, Website Speed Optimization, Mobile Optimization, XML Sitemaps, Schema Markup, SEO Content Creation, SEO for Shopify - WooCommerce or Magento, Google My Business (GMB) Optimization.",
+    "href": "/contact"
+  },
+  {
+    "num": "04",
+    "title": "UI/UX Design",
+    "description": "Website Design, Mobile App Design, Web Application Design, Responsive Design, UI Style Guides, User Research, User Personas, Journey Mapping, Usability Testing, A/B Testing, Accessibility Audits, Custom Illustrations and Graphics, Motion Design, Design Systems, Logo Design, Color Palette and Typography, Chatbot Design, Checkout Flow Optimization.",
+    "href": "/contact"
+  }
+]
