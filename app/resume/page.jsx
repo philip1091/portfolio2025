@@ -8,7 +8,7 @@ import {
   FaFigma,
   FaLaravel,
   FaPython,
-  FaDocker
+  FaDocker,
 } from "react-icons/fa";
 import {
   SiSass,
@@ -23,7 +23,12 @@ import {
 } from "react-icons/si";
 import { motion } from "motion/react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import Link from "next/link";
 import about from "./data/about";
@@ -57,7 +62,11 @@ const Resume = () => {
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
             <TabsTrigger value="about">About me</TabsTrigger>
-            <a className="flex justify-center" href="/assets/resume/resume.pdf" download="philip-resume.pdf">
+            <a
+              className="flex justify-center"
+              href="/data/resume/resume.pdf"
+              download="philip-resume.pdf"
+            >
               <Button
                 variant="outline"
                 size="lg"

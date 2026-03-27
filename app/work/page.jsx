@@ -17,7 +17,6 @@ import WorkSliderBtns from "@/components/ui/WorkSliderBtns";
 import Link from "next/link";
 import Image from "next/image";
 
-
 const projects = [
   {
     num: "01",
@@ -33,7 +32,7 @@ const projects = [
       { name: "Javascript" },
       { name: "MongoDB" },
     ],
-    image: "/assets/work/work1.png",
+    image: "/data/work/work1.png",
     live: "",
     github: "https://github.com",
   },
@@ -50,7 +49,7 @@ const projects = [
       { name: "MongoDB" },
       { name: "Docker" },
     ],
-    image: "/assets/work/work2.png",
+    image: "/data/work/work2.png",
     live: "",
     github: "https://github.com",
   },
@@ -68,7 +67,7 @@ const projects = [
       { name: "Mysql" },
       { name: "Docker" },
     ],
-    image: "/assets/work/work3.png",
+    image: "/data/work/work3.png",
     live: "",
     github: "https://github.com",
   },
@@ -79,7 +78,7 @@ const projects = [
     description:
       "In this project, I developed a user registration page for a Ferrari showcase event featuring the new 296 GTS. Attendees registered by providing their information and electronically signing forms. I designed and implemented a backend using Python and MongoDB to securely store user data, ensuring efficient data management and scalability. To streamline deployment, I containerized the entire application using Docker, enabling seamless remote deployment and system reliability. This solution provided a smooth registration process, combining user convenience with robust backend architecture tailored to meet the event’s operational needs.",
     stack: [{ name: "ReactJs" }, { name: "Css3" }, { name: "Docker" }],
-    image: "/assets/work/work4.png",
+    image: "/data/work/work4.png",
     live: "",
     github: "https://github.com",
   },
@@ -90,7 +89,7 @@ const projects = [
     description:
       "In this project, I developed a showcase webpage to highlight the services offered by the company that hired me. I used React.js to create a dynamic and visually engaging interface that effectively communicated the company's offerings. Images used on the webpage were managed and stored efficiently using BusyBox, ensuring lightweight and streamlined performance. To facilitate seamless deployment and scalability, I containerized the application using Docker, enabling remote deployment with ease. This project delivered a professional, user-friendly solution that showcased the company’s services while leveraging modern tools for efficient development and deployment.",
     stack: [{ name: "ReactJs" }, { name: "Css3" }],
-    image: "/assets/work/work5.png",
+    image: "/data/work/work5.png",
     live: "",
     github: "https://github.com",
   },
@@ -101,7 +100,7 @@ const projects = [
     description:
       "I developed this portfolio website to showcase my services, resume, and professional work. Built with Next.js, the site features a modern, responsive design that highlights my skills and projects effectively. To ensure scalability and streamlined deployment, I utilized Docker to containerize the application, enabling efficient remote deployment. The website was hosted on AWS, leveraging its robust infrastructure for high availability and performance. This project demonstrates my technical expertise in building and deploying professional-grade web applications, while providing potential clients and employers with a comprehensive view of my capabilities and achievements.",
     stack: [{ name: "NextJs" }, { name: "Tailwind.css" }],
-    image: "/assets/work/work6.png",
+    image: "/data/work/work6.png",
     live: "",
     github: "https://github.com",
   },
@@ -119,12 +118,11 @@ const projects = [
       { name: "Mysql" },
       { name: "Docker" },
     ],
-    image: "/assets/work/work7.png",
+    image: "/data/work/work7.png",
     live: "",
     github: "https://github.com",
   },
 ];
-
 
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
@@ -135,7 +133,6 @@ const Work = () => {
     //update project state based on current slide index
     setProject(projects[currentIndex]);
   };
-
 
   return (
     <motion.div

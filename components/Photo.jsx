@@ -31,7 +31,7 @@ const Photo = () => {
           }}
         >
           <Image
-            src="/assets/photo.png"
+            src="/data/photo.png"
             priority
             quality={100}
             fill
@@ -69,6 +69,6 @@ const Photo = () => {
       </motion.div>
     </div>
   );
-}
+};
 
-export default Photo
+export default Photo;
