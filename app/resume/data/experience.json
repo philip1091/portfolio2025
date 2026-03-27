@@ -1,5 +1,5 @@
 {
-  "icon": "/data/resume/badge.svg",
+  "icon": "/assets/resume/badge.svg",
   "title": "My Experience",
   "description": "I have extensive experience as a frontend, full-stack, and software developer, specializing in building user-friendly interfaces, robust backend systems, and scalable applications. I’ve worked on innovative projects like interactive 3D apps, mobile solutions, and Dockerized deployments, leveraging tools like React, Node.js, and MongoDB. My focus is on delivering high-quality, impactful digital experiences.",
   "items": [

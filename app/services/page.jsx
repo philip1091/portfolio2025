@@ -2,8 +2,7 @@
 import { BsArrowDownRight } from "react-icons/bs";
 import Link from "next/link";
 import { motion } from "motion/react";
-import services from "./data/services";
-
+import services from "./assets/services";
 
 const Services = () => {
   return (
@@ -16,7 +15,7 @@ const Services = () => {
             transition: {
               delay: 2.4,
               duration: 0.4,
-              ease: "easeIn"
+              ease: "easeIn",
             },
           }}
           className="grid grid-cols-1 md:grid-cols-2 gap-[60px] my-10"
@@ -46,7 +45,8 @@ const Services = () => {
                 </div>
                 <h2
                   className="text-[42px] font-bold leading-bold leading-none text-white
-                  group-hover:text-accent transition-all duration-500">
+                  group-hover:text-accent transition-all duration-500"
+                >
                   {service.title}
                 </h2>
                 <p className="text-white/60">{service.description}</p>
@@ -58,7 +58,6 @@ const Services = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Services
-
+export default Services;

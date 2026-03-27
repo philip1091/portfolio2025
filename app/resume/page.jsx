@@ -31,10 +31,10 @@ import {
 } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import Link from "next/link";
-import about from "./data/about";
-import experience from "./data/experience";
-import education from "./data/education";
-import skills from "./data/skills";
+import about from "./assets/about";
+import experience from "./assets/experience";
+import education from "./assets/education";
+import skills from "./assets/skills";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
@@ -64,7 +64,7 @@ const Resume = () => {
             <TabsTrigger value="about">About me</TabsTrigger>
             <a
               className="flex justify-center"
-              href="/data/resume/resume.pdf"
+              href="/assets/resume/resume.pdf"
               download="philip-resume.pdf"
             >
               <Button

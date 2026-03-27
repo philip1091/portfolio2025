@@ -4,7 +4,7 @@ import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 import Intro from "@/components/Intro";
-import info from "./data/info";
+import info from "./assets/info";
 
 const Home = () => {
   return (
@@ -29,7 +29,7 @@ const Home = () => {
             </div>
 
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <a href="/data/resume/resume.pdf" download="philip-resume.pdf">
+              <a href="/assets/resume/resume.pdf" download="philip-resume.pdf">
                 <Button
                   variant="outline"
                   size="lg"

@@ -14,8 +14,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import emailjs from "@emailjs/browser";
-import info from "./data/info";
-import emailData from "./data/email";
+import info from "./assets/info";
+import emailData from "./assets/email";
 
 const Contact = () => {
   const [firstname, setFirstname] = useState("");
@@ -61,7 +61,7 @@ const Contact = () => {
         emailData.service_id,
         emailData.template_id,
         contactData,
-        emailData.public_key
+        emailData.public_key,
       )
       .then(
         (response) => {
@@ -77,10 +77,9 @@ const Contact = () => {
         (error) => {
           console.error("FAILED...", error);
           alert("Failed to send email.");
-        }
+        },
       );
   };
-
 
   return (
     <motion.section
