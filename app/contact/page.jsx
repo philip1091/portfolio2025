@@ -14,8 +14,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import emailjs from "@emailjs/browser";
-import info from "./assets/info";
-import emailData from "./assets/email";
+import info from "./data/info";
+import emailData from "./data/email";
 
 const Contact = () => {
   const [firstname, setFirstname] = useState("");

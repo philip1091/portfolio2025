@@ -4,7 +4,7 @@ import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 import Intro from "@/components/Intro";
-import info from "./assets/info";
+import info from "./data/info";
 
 const Home = () => {
   return (

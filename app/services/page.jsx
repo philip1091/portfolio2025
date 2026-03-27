@@ -2,7 +2,7 @@
 import { BsArrowDownRight } from "react-icons/bs";
 import Link from "next/link";
 import { motion } from "motion/react";
-import services from "./assets/services";
+import services from "./data/services";
 
 const Services = () => {
   return (
